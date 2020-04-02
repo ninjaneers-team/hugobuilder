@@ -16,5 +16,5 @@ RUN mkdir /target
 WORKDIR /source
 VOLUME /source /target
 
-ENTRYPOINT ["/usr/bin/hugo", "-d", "/target"]
+ENTRYPOINT ["/usr/local/bin/hugo", "-d", "/target"]
 CMD ["--cleanDestinationDir"]
